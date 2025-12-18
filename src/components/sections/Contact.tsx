@@ -77,8 +77,8 @@ const Contact = () => {
               <div>
                 <h4 className="text-white font-bold mb-4">Details</h4>
                 <div className="flex flex-col gap-2 text-slate-400 text-sm">
-                  <p>📍 Abeokuta, Nigeria — 100% Remote</p>
-                  <p>📱 +234 904 497 4094 (WhatsApp)</p>
+                  <p>Based in Abeokuta, Nigeria — 100% Remote</p>
+                  <p>+234 904 497 4094 (WhatsApp)</p>
                 </div>
               </div>
             </div>
