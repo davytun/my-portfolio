@@ -100,7 +100,7 @@ const GraphicsStack = () => {
     "Stripe",
   ];
   return (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-slate-900 border border-slate-800 relative overflow-hidden flex flex-row items-center justify-center gap-4 p-4">
+    <div className="flex flex-1 w-full h-full min-h-[6rem] max-h-[20rem] md:max-h-none rounded-xl bg-slate-900 border border-slate-800 relative overflow-hidden flex flex-row items-center justify-center gap-4 p-4">
       <div className="absolute inset-0 bg-slate-950/50" />
 
       {/* Mask to fade top/bottom */}

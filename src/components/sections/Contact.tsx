@@ -52,34 +52,35 @@ const Contact = () => {
               </Magnetic>
             </div>
 
-            <div className="mt-16">
-              <h4 className="text-white font-bold mb-6">Socials</h4>
-              <ul className="flex flex-wrap gap-6 text-slate-400">
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-white flex items-center gap-1"
-                  >
-                    LinkedIn <ArrowUpRight className="w-3 h-3" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-white flex items-center gap-1"
-                  >
-                    Twitter <ArrowUpRight className="w-3 h-3" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-white flex items-center gap-1"
-                  >
-                    GitHub <ArrowUpRight className="w-3 h-3" />
-                  </a>
-                </li>
-              </ul>
+            <div className="mt-16 space-y-8">
+              <div>
+                <h4 className="text-white font-bold mb-4">Connect</h4>
+                <ul className="flex flex-wrap gap-6 text-slate-400">
+                  <li>
+                    <a href="https://linkedin.com/in/davytun" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-1 transition-colors">
+                      LinkedIn <ArrowUpRight className="w-3 h-3" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/davytun" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-1 transition-colors">
+                      X (Twitter) <ArrowUpRight className="w-3 h-3" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/davytun" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-1 transition-colors">
+                      GitHub <ArrowUpRight className="w-3 h-3" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-white font-bold mb-4">Details</h4>
+                <div className="flex flex-col gap-2 text-slate-400 text-sm">
+                  <p>📍 Abeokuta, Nigeria — 100% Remote</p>
+                  <p>📱 +234 904 497 4094 (WhatsApp)</p>
+                </div>
+              </div>
             </div>
           </div>
 
