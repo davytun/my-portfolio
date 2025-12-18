@@ -83,7 +83,7 @@ const Projects = () => {
             <h2 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-[0.9]">
               Selected Work
               <br />
-              <span className="text-slate-600">& Impact.</span>
+              <span className="text-slate-500">& Impact.</span>
             </h2>
           </GsapReveal>
         </div>
@@ -109,6 +109,7 @@ const Projects = () => {
                   <motion.img
                     src={project.image}
                     alt={project.title}
+                    loading="lazy"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.6 }}
                     className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0"

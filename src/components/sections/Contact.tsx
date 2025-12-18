@@ -57,17 +57,32 @@ const Contact = () => {
                 <h4 className="text-white font-bold mb-4">Connect</h4>
                 <ul className="flex flex-wrap gap-6 text-slate-400">
                   <li>
-                    <a href="https://linkedin.com/in/davytun" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-1 transition-colors">
+                    <a
+                      href="https://linkedin.com/in/davytun"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white flex items-center gap-1 transition-colors"
+                    >
                       LinkedIn <ArrowUpRight className="w-3 h-3" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://x.com/davytun" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-1 transition-colors">
+                    <a
+                      href="https://x.com/davytun"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white flex items-center gap-1 transition-colors"
+                    >
                       X (Twitter) <ArrowUpRight className="w-3 h-3" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/davytun" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-1 transition-colors">
+                    <a
+                      href="https://github.com/davytun"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white flex items-center gap-1 transition-colors"
+                    >
                       GitHub <ArrowUpRight className="w-3 h-3" />
                     </a>
                   </li>
@@ -77,7 +92,8 @@ const Contact = () => {
               <div>
                 <h4 className="text-white font-bold mb-4">Details</h4>
                 <div className="flex flex-col gap-2 text-slate-400 text-sm">
-                  <p>Based in Abeokuta, Nigeria — 100% Remote</p>
+                  <p>Based in Abeokuta, Nigeria </p>
+                  <p>100% Remote</p>
                   <p>+234 904 497 4094 (WhatsApp)</p>
                 </div>
               </div>
@@ -95,7 +111,7 @@ const Contact = () => {
       </div>
 
       <footer className="w-full text-center py-8 border-t border-slate-900 mt-24">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-slate-600 text-sm">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
           <span>
             © {new Date().getFullYear()} David Akintunde. All rights reserved.
           </span>

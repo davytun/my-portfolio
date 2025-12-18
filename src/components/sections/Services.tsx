@@ -87,7 +87,7 @@ const Services = () => {
             >
               <div className="py-10 md:py-16 flex flex-col md:flex-row items-start md:items-center justify-between transition-colors duration-300 group-hover:bg-slate-900/20 px-0 md:px-8 mx-0 md:-mx-8 rounded-xl">
                 <div className="flex items-center gap-8 md:gap-16 w-full md:w-auto">
-                  <span className="font-mono text-slate-600 text-sm md:text-base">
+                  <span className="font-mono text-slate-500 text-sm md:text-base">
                     /{service.id}
                   </span>
                   <h3
