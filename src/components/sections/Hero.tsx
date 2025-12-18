@@ -62,7 +62,7 @@ export default function Hero() {
           </motion.h1>
         </motion.div>
 
-        <div className="mt-16 max-w-2xl">
+        <div className="mt-8 md:mt-16 max-w-2xl">
           <TextGenerateEffect
             words="Building high-performance digital experiences that define brands and drive growth."
             className="text-xl md:text-2xl text-slate-400 font-light tracking-wide leading-relaxed"

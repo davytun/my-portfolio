@@ -128,7 +128,7 @@ const GraphicsStack = () => {
 
       {/* Column 2 (Slower, Reverse offset effectively by speed or direction if needed, but simple vertical flow is requested) */}
       <div
-        className="flex flex-col gap-3 relative z-10 h-[200%] -mt-10 md:-mt-0 animate-scroll-vertical"
+        className="hidden md:flex flex-col gap-3 relative z-10 h-[200%] -mt-10 md:-mt-0 animate-scroll-vertical"
         style={{ "--animation-duration": "40s" } as React.CSSProperties}
       >
         {[...stack, ...stack, ...stack].reverse().map((tech, i) => (
@@ -146,9 +146,9 @@ const GraphicsStack = () => {
         ))}
       </div>
 
-      {/* Column 3 */}
+      {/* Column 3 - Hidden on mobile to reduce density */}
       <div
-        className="flex flex-col gap-3 relative z-10 h-[200%] -mt-10 md:-mt-0 animate-scroll-vertical"
+        className="hidden md:flex flex-col gap-3 relative z-10 h-[200%] -mt-10 md:-mt-0 animate-scroll-vertical"
         style={{ "--animation-duration": "35s" } as React.CSSProperties}
       >
         {[...stack, ...stack, ...stack].map((tech, i) => (

@@ -85,7 +85,7 @@ const Services = () => {
               }
               onMouseEnter={() => setActiveService(service.id)}
             >
-              <div className="py-10 md:py-16 flex flex-col md:flex-row items-start md:items-center justify-between transition-colors duration-300 group-hover:bg-slate-900/20 px-4 md:px-8 -mx-4 md:-mx-8 rounded-xl">
+              <div className="py-10 md:py-16 flex flex-col md:flex-row items-start md:items-center justify-between transition-colors duration-300 group-hover:bg-slate-900/20 px-0 md:px-8 mx-0 md:-mx-8 rounded-xl">
                 <div className="flex items-center gap-8 md:gap-16 w-full md:w-auto">
                   <span className="font-mono text-slate-600 text-sm md:text-base">
                     /{service.id}
@@ -97,7 +97,7 @@ const Services = () => {
                   </h3>
                 </div>
 
-                <div className="hidden md:block">
+                <div>
                   <motion.div
                     animate={{ rotate: activeService === service.id ? 180 : 0 }}
                     className="text-white bg-slate-800 p-3 rounded-full"
@@ -123,7 +123,7 @@ const Services = () => {
                     }}
                     className="overflow-hidden"
                   >
-                    <div className="pb-16 flex flex-col md:flex-row gap-12 pl-0 md:pl-[120px] px-4 md:px-8 -mx-4 md:-mx-8">
+                    <div className="pb-16 flex flex-col md:flex-row gap-12 pl-0 md:pl-[120px] px-0 md:px-8 mx-0 md:-mx-8">
                       <p className="text-xl md:text-2xl text-slate-300 max-w-2xl leading-relaxed font-light">
                         {service.description}
                       </p>
