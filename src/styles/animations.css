@@ -1,0 +1,245 @@
+
+/* Animation Keyframes */
+@keyframes slide-up {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px 0 rgba(var(--primary), 0.5);
+  }
+  50% {
+    box-shadow: 0 0 25px 5px rgba(var(--primary), 0.7);
+  }
+}
+
+/* Enhanced Animations */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes pulse-medium {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes pulse-slower {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes gradient-xy {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Animation Classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
+
+.animate-pulse-medium {
+  animation: pulse-medium 5s ease-in-out infinite;
+}
+
+.animate-pulse-slower {
+  animation: pulse-slower 7s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* Hover Effects */
+.hover-lift {
+  transition: all 300ms ease-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px -10px rgba(0,0,0,0.1);
+}
+
+/* Interactive underline animations */
+.animated-underline {
+  position: relative;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)));
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.animated-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* 3D button effect */
+.button-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button-3d:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 rgba(0,0,0,0.2);
+}
+
+/* Enhanced Card Hover Effects */
+.card-3d-hover {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card-3d-hover:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Gradient Border Effect */
+.gradient-border {
+  position: relative;
+  border-radius: 0.5rem;
+  background-clip: padding-box;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+  border-radius: 0.6rem;
+  z-index: -1;
+  animation: gradient-rotate 6s linear infinite;
+}
+
+@keyframes gradient-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Glass Card Effect */
+.glass-card {
+  backdrop-filter: blur 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text reveal animation */
+.text-reveal {
+  animation: text-clip 1s cubic-bezier(0.5, 0, 0.1, 1) forwards;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+@keyframes text-clip {
+  0% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
