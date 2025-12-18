@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <section
       ref={container}
-      className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-dark-bg"
+      className="relative min-h-[100dvh] flex flex-col items-center justify-center overflow-hidden bg-dark-bg"
     >
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"

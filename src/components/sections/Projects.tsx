@@ -102,7 +102,7 @@ const Projects = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block h-full"
+                className="block"
               >
                 <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] md:aspect-auto md:h-[380px] border border-slate-800 group-hover:border-slate-600 transition-colors duration-500">
                   <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
